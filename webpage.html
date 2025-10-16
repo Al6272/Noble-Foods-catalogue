@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noble Foods | Pure Honey, Dates & Dry Fruits</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff8e1;
+      color: #3a2a00;
+    }
+    header, section, footer {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header {
+      background: linear-gradient(to bottom, #ffecb3, #fff8e1);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: #a66a00;
+      margin-bottom: 10px;
+    }
+    header p {
+      max-width: 600px;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #a66a00;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background-color: #8c5900;
+    }
+    section h2 {
+      color: #a66a00;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    section p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      color: #a66a00;
+      margin-top: 15px;
+      font-size: 1.3rem;
+    }
+    .product-card p {
+      padding: 0 15px 20px;
+      color: #4a3b00;
+      font-size: 1rem;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+    }
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    footer {
+      background-color: #a66a00;
+      color: #fff;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Noble Foods</h1>
+    <p>Pure, Natural & Sweet — From Hive to Home. Discover premium honey, hand-picked dates, and the finest dry fruits.</p>
+    <a href="#products" class="btn">Explore Products</a>
+  </header>  <section id="about">
+    <h2>Our Story</h2>
+    <p>At <strong>Noble Foods</strong>, we bring you nature’s sweetness in its purest form. Our honey is sourced from trusted beekeepers, our dates are sun-ripened, and our dry fruits are handpicked for quality. We believe in purity, sustainability, and taste that connects you with nature.</p>
+  </section>  <section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://media.istockphoto.com/id/1708295371/photo/advertising-photo-of-honey.jpg?s=612x612&w=0&k=20&c=TuuOoVYQhRmBoRWNBW9PW-mrNrqnngMFJWAKuaE8eLA=" alt="Pure Honey">
+        <h3>Pure Honey</h3>
+        <p>Golden and rich — naturally harvested, packed with flavor and health.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://www.shutterstock.com/image-photo/full-frame-background-top-view-600nw-2223473303.jpg" alt="Premium Dates">
+        <h3>Premium Dates</h3>
+        <p>Succulent and sweet dates sourced from the best farms in the Middle East.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://previews.123rf.com/images/keira01/keira011706/keira01170600052/80864961-mix-almonds-cashew-nuts-peanuts-pistachio-on-wood-background-top-view.jpg" alt="Dry Fruits Mix">
+        <h3>Dry Fruits Mix</h3>
+        <p>A healthy selection of almonds, cashews, and raisins — pure goodness.</p>
+      </div>
+    </div>
+  </section>  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Have a question, bulk inquiry, or want to stock Noble Foods? We’d love to hear from you.</p>
+    <div class="contact-info">
+      <div>📧 mgabajiwala@gmail.com</div>
+      <div>📞 +91 9820350227</div>
+      <div> Murtaza Gabajiwala</div>
+      <div>📍 Love Lane, Mazgaon, Mumbai, India</div>
+    </div>
+  </section>  <footer>
+    <p>© <span id="year"></span> Noble Foods. All rights reserved.</p>
+  </footer>  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script></body>
+</html>
